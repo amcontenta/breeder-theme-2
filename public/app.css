@@ -140,44 +140,46 @@ html.sr .load-hidden {
   margin: 0 auto; }
 
 h1 {
-  font-family: Shippori Mincho B1;
+  font-family: "Lora", serif;
   font-size: 55px;
   font-weight: 600;
   color: white; }
 
 h2 {
-  font-family: Shippori Mincho B1;
-  font-size: 40px;
-  font-weight: 600;
-  color: #282b28; }
+  font-family: "Lora", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: black; }
 
 .font-white {
   color: white; }
 
 .font-black {
-  color: #282b28; }
+  color: black; }
 
 .white-fill {
   fill: white; }
 
 .button {
-  font-family: Open Sans;
-  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 1px;
-  color: white;
-  background-color: #483d8b;
-  padding: 17px 37px;
-  border: none;
+  color: #e16c5b;
+  background-color: white;
+  padding: 10px 23px;
+  border: 2px solid #e16c5b;
+  border-radius: 80px;
   cursor: pointer;
   transition-duration: 0.1s; }
   .button:hover {
-    background-color: #282b28;
-    color: white; }
+    text-decoration: underline; }
 
 a {
-  color: #483d8b; }
+  color: #e16c5b;
+  text-decoration: none; }
   a:visited {
-    color: #483d8b; }
+    color: #e16c5b; }
 
 .hero-image {
   object-position: 50% 50%;
@@ -199,180 +201,82 @@ a {
 [data-page="home"] {
   /* Mobile Styles */ }
   [data-page="home"] .home-wrapper {
-    font-family: Open Sans;
-    font-size: 18px;
-    color: #282b28; }
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black; }
   [data-page="home"] .hero-image {
-    object-position: 50% 0% !important; }
-  [data-page="home"] .white-div {
-    background-color: white;
-    width: 447px;
-    height: 283px;
-    opacity: 0.4;
-    position: absolute;
-    top: 292px;
-    left: 95px; }
-  [data-page="home"] .image-header {
-    font-family: Shippori Mincho B1;
-    font-size: 45px;
-    font-weight: 600;
-    color: #282b28;
-    line-height: 55px;
-    position: absolute;
-    top: 318px;
-    left: 132px;
-    width: 376px;
-    height: 230px; }
+    object-position: 50% 75% !important;
+    height: 590px; }
+  [data-page="home"] .header-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around; }
+  [data-page="home"] .header-text {
+    width: 476px; }
+  [data-page="home"] .about-text {
+    width: 552px; }
+  [data-page="home"] .large-image {
+    object-position: 50% 75% !important;
+    width: 100%;
+    height: 590px;
+    object-fit: cover; }
   [data-page="home"] .image-text-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-around; }
-  [data-page="home"] .image-dog-1 {
-    width: 463px;
-    height: 420px;
-    background-image: url("images/fluffy-puppy-medium.jpg");
-    background-position: center top;
-    background-size: cover; }
-  [data-page="home"] .image-dog-2 {
-    width: 463px;
-    height: 420px;
-    background-image: url("images/white-dog-medium.jpg");
-    background-position: center center;
-    background-size: cover; }
+    justify-content: space-evenly; }
+  [data-page="home"] .p-width {
+    width: 460px; }
   [data-page="home"] .paragraph-text {
-    width: 400px;
     line-height: 30px; }
   [data-page="home"] .padding {
     padding: 5%; }
-  [data-page="home"] .large-image {
-    height: 590px;
-    width: 100%;
-    background-image: url("images/running-dog.jpg");
-    background-position: center center;
+  [data-page="home"] .insta-text-wrapper {
+    background-image: url("images/tree-mist.jpg");
+    background-position: 10% 90%;
     background-size: cover;
-    position: relative;
-    overflow: auto; }
-  [data-page="home"] .large-image-text {
-    font-family: Shippori Mincho B1;
-    font-size: 45px;
-    font-weight: 600;
-    color: white;
-    line-height: 55px;
-    margin-top: 183px;
-    margin-left: 95px;
-    text-align: left; }
-  [data-page="home"] .large-image-text-2 {
-    font-family: Open Sans;
-    font-size: 22px;
-    color: white;
-    line-height: 55px;
-    margin-top: 34px;
-    margin-bottom: 30px;
-    text-align: left; }
-  [data-page="home"] .quote {
-    font-family: Shippori Mincho B1;
-    font-size: 45px;
-    font-weight: 600;
-    color: #282b28;
-    line-height: 60px;
-    width: 838px;
+    padding: 8%; }
+  [data-page="home"] .insta-text {
+    width: 75%;
     margin: 0 auto;
-    text-align: center; }
-  [data-page="home"] .small-quote-text {
-    font-family: Open Sans;
-    font-size: 20px;
-    color: #282b28;
-    margin-top: 27px; }
-  [data-page="home"] .gallery-wrapper {
-    background-color: #475a58;
-    padding: 70px 50px; }
-  [data-page="home"] .gallery-text-wrapper {
-    text-align: left; }
-  [data-page="home"] .photo-grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 35px;
-    margin-bottom: 45px; }
-  [data-page="home"] .grid-item {
-    width: 25%;
-    margin-right: 25px; }
-    [data-page="home"] .grid-item:nth-child(4n) {
-      margin-right: 0; }
+    margin-bottom: 55px;
+    color: white; }
   @media only screen and (max-width: 950px) {
     [data-page="home"] .home-wrapper {
       font-size: 16px; }
-    [data-page="home"] .home-image {
-      height: 635px; }
-    [data-page="home"] .white-div {
-      background-color: white;
-      width: 300px;
-      height: 200px;
-      top: 450px;
-      left: 5%; }
-    [data-page="home"] .image-header {
-      font-size: 30px;
-      line-height: 36px;
-      top: 450px;
-      left: 5%;
-      width: 251px;
-      height: 146px;
-      padding: 24px 25px; }
+    [data-page="home"] .hero-image {
+      object-position: 80% 50% !important; }
+    [data-page="home"] .header-wrapper {
+      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+    [data-page="home"] .header-text {
+      order: 2;
+      width: auto;
+      max-width: 500px; }
     [data-page="home"] .image-text-wrapper {
       display: block;
       display: flex;
       flex-wrap: wrap;
       justify-content: center; }
+    [data-page="home"] .about-text {
+      width: 100%;
+      max-width: 500px; }
     [data-page="home"] .padding {
       padding: 0 5%; }
     [data-page="home"] .image-dog-1 {
-      order: 1;
-      width: 100%;
+      order: 2;
       max-width: 580px; }
     [data-page="home"] .image-dog-2 {
-      width: 100%;
       max-width: 580px; }
     [data-page="home"] .paragraph-text {
-      order: 2;
       width: 100%;
       max-width: 500px; }
-    [data-page="home"] .large-image {
+    [data-page="home"] .insta-text-wrapper {
+      padding: 10% 2%;
       background-image: none;
-      background-color: #e5e8e8;
-      height: auto;
-      max-width: 580px;
-      margin: 0 auto 60px auto; }
-    [data-page="home"] .large-image-text {
-      width: 100%;
-      margin: 60px auto;
-      text-align: center;
-      color: #282b28;
-      font-size: 35px; }
-    [data-page="home"] .large-image-text-2 {
-      text-align: center;
-      color: #282b28;
-      font-weight: normal;
-      font-size: 20px; }
-    [data-page="home"] .quote {
-      width: auto;
-      font-size: 28px;
-      line-height: normal; }
-    [data-page="home"] .small-quote-text {
-      width: auto;
-      font-size: 16px;
-      margin: 27px auto 0 auto; }
-    [data-page="home"] .gallery-wrapper {
-      padding: 10% 5%; }
-    [data-page="home"] .gallery-text-wrapper {
-      padding: 0 10px; }
-    [data-page="home"] .photo-grid {
-      flex-wrap: wrap;
-      margin-bottom: 20px; }
-      [data-page="home"] .photo-grid .grid-item {
-        width: calc(50% - 25px);
-        margin-bottom: 25px; }
-        [data-page="home"] .photo-grid .grid-item:nth-child(2n) {
-          margin-right: 0; } }
+      background-color: #6f5b5b; } }
 
 /* Main Font Color */
 /* Buttons and Mobile Nav Link Color */
@@ -380,9 +284,10 @@ a {
 [data-page="adopt"] {
   /* Mobile Styles */ }
   [data-page="adopt"] .adopt-wrapper {
-    font-family: Open Sans;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
-    color: #282b28; }
+    font-weight: 300;
+    color: black; }
   [data-page="adopt"] .header-image {
     height: 500px; }
   [data-page="adopt"] .hero-image {
@@ -420,9 +325,10 @@ a {
 [data-page="faq"] {
   /* Mobile Styles */ }
   [data-page="faq"] .faq-wrapper {
-    font-family: Open Sans;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
-    color: #282b28; }
+    font-weight: 300;
+    color: black; }
   [data-page="faq"] .header-image {
     height: 500px; }
   [data-page="faq"] .title {
@@ -436,7 +342,7 @@ a {
     line-height: 24px; }
   [data-page="faq"] .header {
     font-weight: 800;
-    font-family: Shippori Mincho B1;
+    font-family: "Lora", serif;
     font-size: 24px; }
   @media only screen and (max-width: 950px) {
     [data-page="faq"] .faq-wrapper {
@@ -458,9 +364,10 @@ a {
 [data-page="contact"] {
   /* Mobile Styles */ }
   [data-page="contact"] .contact-wrapper {
-    font-family: Open Sans;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
-    color: #282b28;
+    color: black;
+    font-weight: 300;
     line-height: 30px;
     overflow: auto; }
   [data-page="contact"] .text-wrapper {
@@ -472,7 +379,7 @@ a {
     padding-right: 5%; }
   [data-page="contact"] .header {
     font-weight: 600;
-    font-family: Shippori Mincho B1;
+    font-family: "Lora", serif;
     font-size: 40px;
     line-height: 45px; }
   [data-page="contact"] .margin-bottom-1 {
@@ -511,9 +418,10 @@ a {
 [data-page="futurelitters"] {
   /* Mobile Styles */ }
   [data-page="futurelitters"] .future-litters-wrapper {
-    font-family: Open Sans;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
-    color: #282b28; }
+    font-weight: 300;
+    color: black; }
   [data-page="futurelitters"] .header-image {
     height: 500px; }
   [data-page="futurelitters"] .title {
@@ -558,9 +466,10 @@ a {
   /* Create four equal columns that sits next to each other */
   /* Responsive layout - makes a two column-layout instead of four columns */ }
   [data-page="pastlitters"] .pastlitters-wrapper {
-    font-family: Open Sans;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
-    color: #282b28;
+    font-weight: 300;
+    color: black;
     overflow: auto; }
   [data-page="pastlitters"] .margin-top {
     margin-top: 150px; }
@@ -587,9 +496,10 @@ a {
 /* Buttons and Mobile Nav Link Color */
 /* Footer and New litter background */
 [data-page="parents"] .parents-wrapper {
-  font-family: Open Sans;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
-  color: #282b28; }
+  font-weight: 300;
+  color: black; }
 
 [data-page="parents"] .header-image {
   height: 500px; }
@@ -675,9 +585,10 @@ a {
 [data-page="supplylist"] {
   /* Mobile Styles */ }
   [data-page="supplylist"] .supply-wrapper {
-    font-family: Open Sans;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
-    color: #282b28; }
+    font-weight: 300;
+    color: black; }
   [data-page="supplylist"] .header-image {
     height: 500px; }
   [data-page="supplylist"] .title {
@@ -691,7 +602,7 @@ a {
     position: relative; }
   [data-page="supplylist"] .header {
     font-weight: 800;
-    font-family: Shippori Mincho B1;
+    font-family: "Lora", serif;
     font-size: 24px;
     line-height: 24px; }
   @media only screen and (max-width: 950px) {
@@ -712,9 +623,10 @@ a {
 .footer-wrapper {
   background-color: #e5e8e8;
   position: relative;
-  font-family: Open Sans;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   font-size: 12px;
-  color: #282b28;
+  color: black;
   line-height: 2.5; }
   .footer-wrapper .social-media-wrapper {
     position: absolute;
@@ -730,9 +642,9 @@ a {
       .footer-wrapper .social-media-wrapper a:nth-child(1) {
         margin-right: 5px; }
   .footer-wrapper .contenta-doodles {
-    font-family: Shippori Mincho B1;
+    font-family: "Lora", serif;
     font-size: 20px;
-    color: #282b28; }
+    color: black; }
   .footer-wrapper .padding-text {
     padding: 50px 0; }
 
@@ -749,27 +661,28 @@ a {
 /* Buttons and Mobile Nav Link Color */
 /* Footer and New litter background */
 .desktop-nav-wrapper {
-  position: absolute;
   width: 100%;
   z-index: 1;
-  max-width: 1440px; }
+  max-width: 1440px;
+  padding-bottom: 35px; }
   .desktop-nav-wrapper .doodles-name-logo {
     position: absolute;
-    top: 21px;
+    top: 26px;
     left: 29px;
-    font-family: Shippori Mincho B1;
+    font-family: "Lora", serif;
     font-size: 25px;
-    color: #282b28; }
+    color: black; }
     .desktop-nav-wrapper .doodles-name-logo a {
-      color: #282b28;
+      color: black;
       text-decoration: none; }
   .desktop-nav-wrapper .nav-links {
-    font-family: Open Sans;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
     font-size: 18px;
-    color: #282b28; }
+    color: black; }
   .desktop-nav-wrapper .social-media-wrapper {
     position: absolute;
-    top: 35px;
+    top: 31px;
     right: 39px; }
     .desktop-nav-wrapper .social-media-wrapper a {
       text-decoration: none;
@@ -781,17 +694,18 @@ a {
       .desktop-nav-wrapper .social-media-wrapper a:first-child {
         margin-right: 5px; }
   .desktop-nav-wrapper .nav-links {
-    text-align: center;
-    margin-top: 31px; }
+    text-align: right;
+    margin-top: 31px;
+    margin-right: 150px; }
     .desktop-nav-wrapper .nav-links a {
       text-decoration: none;
-      font-family: Open Sans;
+      font-family: "Poppins", sans-serif;
       font-size: 16px;
       text-align: center;
       margin-right: 34px;
-      color: #282b28; }
+      color: black; }
       .desktop-nav-wrapper .nav-links a:hover {
-        color: #483d8b; }
+        color: #e16c5b; }
       .desktop-nav-wrapper .nav-links a:last-child {
         margin-right: 0; }
     .desktop-nav-wrapper .nav-links .dropdown-container {
@@ -801,7 +715,6 @@ a {
       .desktop-nav-wrapper .nav-links .dropdown-container .dropdown {
         position: absolute;
         background: white;
-        background: rgba(255, 255, 255, 0.5);
         padding: 10px 15px;
         left: -15px;
         visibility: hidden;
@@ -844,16 +757,16 @@ a {
     cursor: pointer; }
 
 .mobile-logo {
-  font-family: Shippori Mincho B1;
+  font-family: "Lora", serif;
   font-size: 24px;
-  color: #282b28 !important;
+  color: black !important;
   position: absolute;
   top: 26px;
   left: 25px;
   text-decoration: none; }
 
 .color-fill {
-  fill: #282b28; }
+  fill: black; }
 
 .mobile-nav-overlay {
   visibility: hidden;
@@ -874,7 +787,7 @@ a {
   cursor: pointer;
   width: 24px;
   height: 24px;
-  fill: #282b28; }
+  fill: black; }
 
 .mobile-nav-link-wrapper {
   height: 300px;
@@ -886,12 +799,12 @@ a {
   margin-left: 25px; }
   .mobile-nav-link-wrapper a {
     text-decoration: none;
-    font-family: Open Sans;
-    color: #282b28;
+    font-family: "Poppins", sans-serif;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #282b28; }
+    color: black; }
 
 /* Mobile Styles */
 @media only screen and (max-width: 950px) {
@@ -936,7 +849,7 @@ a {
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #282b28; }
+    background-color: black; }
 
 .hamburger-box {
   width: 24px;
@@ -951,7 +864,7 @@ a {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 24px;
     height: 2px;
-    background-color: #282b28;
+    background-color: black;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;

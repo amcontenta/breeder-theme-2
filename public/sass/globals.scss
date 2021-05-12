@@ -23,8 +23,8 @@ h1 {
 
 h2 {
   font-family: $font-1;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 400;
   color: $color-1;
 }
 
@@ -42,23 +42,25 @@ h2 {
 
 .button {
   font-family: $font-2;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 1px;
-  color: $color-3;
-  background-color: $color-2;
-  padding: 17px 37px;
-  border: none;
+  color: $color-2;
+  background-color: white;
+  padding: 10px 23px;
+  border: 2px solid $color-2;
+  border-radius: 80px;
   cursor: pointer;
   transition-duration: 0.1s;
 
   &:hover {
-    background-color: $color-1;
-    color: $color-3;
+    text-decoration: underline;
   }
 }
 
 a {
   color: $color-2;
+  text-decoration: none;
 
   &:visited {
     color: $color-2;
