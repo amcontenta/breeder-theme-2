@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
 html,
 body,
 div,
@@ -140,15 +141,14 @@ html.sr .load-hidden {
   margin: 0 auto; }
 
 h1 {
-  font-family: "Lora", serif;
-  font-size: 55px;
-  font-weight: 600;
-  color: white; }
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  color: black;
+  margin-top: 50px; }
 
 h2 {
   font-family: "Lora", serif;
   font-size: 36px;
-  font-weight: 400;
   color: black; }
 
 .font-white {
@@ -159,6 +159,12 @@ h2 {
 
 .white-fill {
   fill: white; }
+
+.line {
+  border-top: 1px solid #707070;
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .button {
   font-family: "Poppins", sans-serif;
@@ -188,12 +194,12 @@ a {
   object-fit: cover; }
 
 @media only screen and (max-width: 950px) {
-  h1 {
-    font-size: 42px; }
   h2 {
     font-size: 30px; }
   .mobile-padding {
-    padding: 0 5%; } }
+    padding: 0 5%; }
+  .line {
+    width: 80%; } }
 
 /* Main Font Color */
 /* Buttons and Mobile Nav Link Color */
@@ -285,39 +291,32 @@ a {
   /* Mobile Styles */ }
   [data-page="adopt"] .adopt-wrapper {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: black; }
-  [data-page="adopt"] .header-image {
-    height: 500px; }
-  [data-page="adopt"] .hero-image {
-    object-position: 50% 70%; }
-  [data-page="adopt"] .title {
-    top: -150px;
-    width: 680px;
-    position: absolute; }
-  [data-page="adopt"] .text-wrapper {
-    width: 680px;
-    margin: 0 auto;
-    line-height: 24px;
-    position: relative; }
-  [data-page="adopt"] .ul-bold {
-    font-weight: 800;
-    text-decoration: underline;
-    font-size: 22px; }
+  [data-page="adopt"] .image-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+  [data-page="adopt"] .p-width {
+    width: 500px; }
+  [data-page="adopt"] .p-spacing {
+    line-height: 40px; }
+  [data-page="adopt"] .center {
+    margin: 0 auto; }
   @media only screen and (max-width: 950px) {
     [data-page="adopt"] .adopt-wrapper {
       font-size: 16px; }
-    [data-page="adopt"] .header-image {
-      height: 300px;
-      background-position: 50% 85%; }
-    [data-page="adopt"] .title {
-      margin: 217px auto 0 auto;
+    [data-page="adopt"] .p-width {
       width: auto; }
-    [data-page="adopt"] .ul-bold {
-      font-size: 20px; }
-    [data-page="adopt"] .text-wrapper {
-      width: auto; } }
+    [data-page="adopt"] .image-text-wrapper {
+      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+    [data-page="adopt"] .paragraph-text {
+      width: 100%;
+      max-width: 500px; } }
 
 /* Main Font Color */
 /* Buttons and Mobile Nav Link Color */
@@ -326,32 +325,23 @@ a {
   /* Mobile Styles */ }
   [data-page="faq"] .faq-wrapper {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: black; }
-  [data-page="faq"] .header-image {
-    height: 500px; }
-  [data-page="faq"] .title {
-    top: -150px;
-    width: 720px;
-    position: relative; }
+  [data-page="faq"] .center {
+    margin: 0 auto; }
   [data-page="faq"] .text-wrapper {
     position: relative;
-    width: 720px;
+    width: 670px;
     margin: 0 auto;
     line-height: 24px; }
   [data-page="faq"] .header {
-    font-weight: 800;
+    font-weight: 500;
     font-family: "Lora", serif;
     font-size: 24px; }
   @media only screen and (max-width: 950px) {
     [data-page="faq"] .faq-wrapper {
       font-size: 16px; }
-    [data-page="faq"] .header-image {
-      height: 300px; }
-    [data-page="faq"] .title {
-      margin: 217px auto 0 auto;
-      width: auto; }
     [data-page="faq"] .text-wrapper {
       width: auto; }
     [data-page="faq"] .header {
@@ -361,6 +351,7 @@ a {
 /* Main Font Color */
 /* Buttons and Mobile Nav Link Color */
 /* Footer and New litter background */
+/* Form Styles */
 [data-page="contact"] {
   /* Mobile Styles */ }
   [data-page="contact"] .contact-wrapper {
@@ -370,24 +361,87 @@ a {
     font-weight: 300;
     line-height: 30px;
     overflow: auto; }
-  [data-page="contact"] .text-wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around; }
-  [data-page="contact"] .questions-wrapper {
-    width: 492px;
-    padding-right: 5%; }
+  [data-page="contact"] .width {
+    width: 600px;
+    margin: 0 auto 100px auto; }
   [data-page="contact"] .header {
-    font-weight: 600;
     font-family: "Lora", serif;
     font-size: 40px;
     line-height: 45px; }
   [data-page="contact"] .margin-bottom-1 {
-    margin-bottom: 210px; }
-  [data-page="contact"] .margin-bottom-2 {
-    margin-bottom: 170px; }
-  [data-page="contact"] .margin-bottom-3 {
-    margin-bottom: 28px; }
+    margin-bottom: 140px; }
+  [data-page="contact"] * {
+    margin: 0;
+    padding: 0; }
+  [data-page="contact"] .contact-us {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 14pt;
+    font-family: "Poppins";
+    color: black; }
+  [data-page="contact"] .contact-form {
+    width: 80%;
+    max-width: 500px; }
+  [data-page="contact"] label,
+  [data-page="contact"] input,
+  [data-page="contact"] textarea {
+    display: block;
+    width: 100%;
+    font-size: 14pt;
+    line-height: 28pt;
+    font-family: "Poppins"; }
+  [data-page="contact"] input {
+    margin-bottom: 28pt; }
+  [data-page="contact"] h3 {
+    font-weight: normal;
+    font-size: 10pt;
+    line-height: 28pt;
+    font-style: italic;
+    margin: 0 0 0.5em 0; }
+  [data-page="contact"] span {
+    font-size: 8pt; }
+  [data-page="contact"] em {
+    color: #e16c5b;
+    font-weight: bold; }
+  [data-page="contact"] input,
+  [data-page="contact"] textarea {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: none; }
+  [data-page="contact"] input:focus,
+  [data-page="contact"] textarea:focus {
+    border: 1px solid #6bd4b1; }
+  [data-page="contact"] textarea {
+    resize: none; }
+  [data-page="contact"] button {
+    display: block;
+    line-height: 28pt;
+    padding: 0 20px;
+    border: none;
+    background: #e16c5b;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    margin: 40px auto 0 auto; }
+    [data-page="contact"] button:hover {
+      cursor: pointer; }
+  [data-page="contact"] ::selection {
+    background: #ffc7b8; }
+  [data-page="contact"] input:-webkit-autofill,
+  [data-page="contact"] input:-webkit-autofill:hover,
+  [data-page="contact"] input:-webkit-autofill:focus,
+  [data-page="contact"] textarea:-webkit-autofill,
+  [data-page="contact"] textarea:-webkit-autofill:hover,
+  [data-page="contact"] textarea:-webkit-autofill:focus {
+    border: 1px solid #6bd4b1;
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    transition: background-color 5000s ease-in-out 0s; }
   @media only screen and (max-width: 950px) {
     [data-page="contact"] .contact-wrapper {
       line-height: normal;
@@ -395,20 +449,18 @@ a {
     [data-page="contact"] .header {
       font-size: 30px;
       line-height: 35px; }
+    [data-page="contact"] .width {
+      width: auto; }
     [data-page="contact"] .text-wrapper {
       display: block;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       margin: 0 auto 80px auto; }
-    [data-page="contact"] .questions-wrapper {
-      padding-right: 0; }
     [data-page="contact"] .contact-info {
       width: 492px; }
     [data-page="contact"] .margin-bottom-1 {
       margin-bottom: 40px; }
-    [data-page="contact"] .margin-bottom-3 {
-      margin-bottom: 15px; }
     [data-page="contact"] .mobile-margin {
       margin-bottom: 25px; } }
 
@@ -419,19 +471,17 @@ a {
   /* Mobile Styles */ }
   [data-page="futurelitters"] .future-litters-wrapper {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: black; }
-  [data-page="futurelitters"] .header-image {
-    height: 500px; }
-  [data-page="futurelitters"] .title {
-    position: absolute;
-    margin: 394px auto 0 15%; }
   [data-page="futurelitters"] .image-wrapper {
     display: flex;
     justify-content: center;
     margin-left: 125px;
     margin-right: 125px; }
+  [data-page="futurelitters"] .p-width {
+    width: 580px;
+    margin: 0 auto; }
   [data-page="futurelitters"] .dog-images {
     width: 50%;
     max-width: 463px;
@@ -444,14 +494,11 @@ a {
   @media only screen and (max-width: 950px) {
     [data-page="futurelitters"] .future-litters-wrapper {
       font-size: 16px; }
-    [data-page="futurelitters"] .header-image {
-      height: 300px; }
-    [data-page="futurelitters"] .title {
-      margin: 217px auto 0 auto;
-      width: auto; }
     [data-page="futurelitters"] .image-wrapper {
       margin-left: 0;
       margin-right: 0; }
+    [data-page="futurelitters"] .p-width {
+      width: auto; }
     [data-page="futurelitters"] .dog-images {
       max-width: 365px; }
     [data-page="futurelitters"] .margin-right {
@@ -467,12 +514,10 @@ a {
   /* Responsive layout - makes a two column-layout instead of four columns */ }
   [data-page="pastlitters"] .pastlitters-wrapper {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: black;
     overflow: auto; }
-  [data-page="pastlitters"] .margin-top {
-    margin-top: 150px; }
   [data-page="pastlitters"] .row {
     display: flex;
     flex-wrap: wrap;
@@ -497,49 +542,18 @@ a {
 /* Footer and New litter background */
 [data-page="parents"] .parents-wrapper {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   color: black; }
-
-[data-page="parents"] .header-image {
-  height: 500px; }
-
-[data-page="parents"] .hero-image {
-  object-position: 50% 30% !important; }
-
-[data-page="parents"] .title {
-  position: absolute;
-  margin: 394px auto 0 15%; }
 
 [data-page="parents"] .image-text-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center; }
 
-[data-page="parents"] .image-dog-1 {
-  width: 463px;
-  height: 420px;
-  background-image: url("images/doodle-dad.jpg");
-  background-position: center center;
-  background-size: cover; }
-
-[data-page="parents"] .image-dog-2 {
-  width: 463px;
-  height: 420px;
-  background-image: url("images/cavapoo-mom.jpg");
-  background-position: 50% 35%;
-  background-size: cover; }
-
-[data-page="parents"] .image-dog-3 {
-  width: 463px;
-  height: 420px;
-  background-image: url("images/dog-bed.jpg");
-  background-position: center center;
-  background-size: cover; }
-
 [data-page="parents"] .paragraph-text {
-  width: 400px;
+  width: 500px;
   line-height: 30px; }
 
 [data-page="parents"] .mb-xxxs {
@@ -551,12 +565,6 @@ a {
 @media only screen and (max-width: 950px) {
   [data-page="parents"] .parents-wrapper {
     font-size: 16px; }
-  [data-page="parents"] .header-image {
-    height: 300px; }
-  [data-page="parents"] .title {
-    margin: 217px auto 0 auto;
-    width: auto;
-    color: white; }
   [data-page="parents"] .image-text-wrapper {
     display: block;
     display: flex;
@@ -926,8 +934,8 @@ a {
 .ta-left {
   text-align: left; }
 
-strong {
-  font-weight: bold; }
+.strong {
+  font-weight: 600; }
 
 .visible {
   opacity: 1 !important;

@@ -15,16 +15,15 @@ html.sr .load-hidden {
 }
 
 h1 {
-  font-family: $font-1;
-  font-size: 55px;
-  font-weight: 600;
-  color: $color-3;
+  font-family: $font-2;
+  font-size: 36px;
+  color: $color-1;
+  margin-top: 50px;
 }
 
 h2 {
   font-family: $font-1;
   font-size: 36px;
-  font-weight: 400;
   color: $color-1;
 }
 
@@ -38,6 +37,13 @@ h2 {
 
 .white-fill {
   fill: white;
+}
+
+.line {
+  border-top: 1px solid #707070;
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .button {
@@ -75,15 +81,15 @@ a {
 }
 
 @media only screen and (max-width: 950px) {
-  h1 {
-    font-size: 42px;
-  }
-
   h2 {
     font-size: 30px;
   }
 
   .mobile-padding {
     padding: 0 5%;
+  }
+
+  .line {
+    width: 80%;
   }
 }

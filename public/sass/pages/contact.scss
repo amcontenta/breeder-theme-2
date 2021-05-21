@@ -1,4 +1,6 @@
 @import "variables";
+/* Form Styles */
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
 
 [data-page="contact"] {
   .contact-wrapper {
@@ -10,34 +12,129 @@
     overflow: auto;
   }
 
-  .text-wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-
-  .questions-wrapper {
-    width: 492px;
-    padding-right: 5%;
+  .width {
+    width: 600px;
+    margin: 0 auto 100px auto;
   }
 
   .header {
-    font-weight: 600;
     font-family: $font-1;
     font-size: 40px;
     line-height: 45px;
   }
 
   .margin-bottom-1 {
-    margin-bottom: 210px;
+    margin-bottom: 140px;
   }
 
-  .margin-bottom-2 {
-    margin-bottom: 170px;
+  $form-bg: white;
+  $form-border: #e16c5b;
+  $form-shadow: #dfae4b;
+  $form-focus: #6bd4b1;
+  $font-size: 14pt;
+  $font-face: "Poppins";
+  $font-color: black;
+
+  * {
+    margin: 0;
+    padding: 0;
   }
 
-  .margin-bottom-3 {
-    margin-bottom: 28px;
+  .contact-us {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: $font-size;
+    font-family: $font-face;
+    color: $font-color;
+  }
+
+  .contact-form {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    font-size: $font-size;
+    line-height: $font-size * 2;
+    font-family: $font-face;
+  }
+
+  input {
+    margin-bottom: $font-size * 2;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 10pt;
+    line-height: $font-size * 2;
+    font-style: italic;
+    margin: 0 0 0.5em 0;
+  }
+
+  span {
+    font-size: 8pt;
+  }
+
+  em {
+    color: $form-border;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: none;
+  }
+
+  input:focus,
+  textarea:focus {
+    border: 1px solid $form-focus;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  button {
+    display: block;
+    line-height: $font-size * 2;
+    padding: 0 20px;
+    border: none;
+    background: $form-border;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    margin: 40px auto 0 auto;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  ::selection {
+    background: rgb(255, 199, 184);
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    border: 1px solid $form-focus;
+    -webkit-text-fill-color: $font-color;
+    -webkit-box-shadow: 0 0 0px 1000px $form-bg inset;
+    transition: background-color 5000s ease-in-out 0s;
   }
 
   /* Mobile Styles */
@@ -52,6 +149,10 @@
       line-height: 35px;
     }
 
+    .width {
+      width: auto;
+    }
+
     .text-wrapper {
       display: block;
       display: flex;
@@ -60,20 +161,12 @@
       margin: 0 auto 80px auto;
     }
 
-    .questions-wrapper {
-      padding-right: 0;
-    }
-
     .contact-info {
       width: 492px;
     }
 
     .margin-bottom-1 {
       margin-bottom: 40px;
-    }
-
-    .margin-bottom-3 {
-      margin-bottom: 15px;
     }
 
     .mobile-margin {
