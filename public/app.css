@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
 html,
 body,
 div,
@@ -144,7 +143,7 @@ h1 {
   font-family: "Poppins", sans-serif;
   font-size: 36px;
   color: black;
-  margin-top: 50px; }
+  line-height: normal; }
 
 h2 {
   font-family: "Lora", serif;
@@ -194,12 +193,21 @@ a {
   object-fit: cover; }
 
 @media only screen and (max-width: 950px) {
-  h2 {
+  h2,
+  h1 {
     font-size: 30px; }
+  .hero-image {
+    width: 100%; }
   .mobile-padding {
     padding: 0 5%; }
   .line {
-    width: 80%; } }
+    width: 80%; }
+  .page-image {
+    width: 100%; }
+  .margin-top {
+    margin-top: 25px; }
+  .white-fill {
+    fill: #e16c5b; } }
 
 /* Main Font Color */
 /* Buttons and Mobile Nav Link Color */
@@ -236,7 +244,9 @@ a {
   [data-page="home"] .paragraph-text {
     line-height: 30px; }
   [data-page="home"] .padding {
-    padding: 5%; }
+    padding: 0 5%; }
+  [data-page="home"] .image-mb {
+    margin-bottom: -8px; }
   [data-page="home"] .insta-text-wrapper {
     background-image: url("images/tree-mist.jpg");
     background-position: 10% 90%;
@@ -261,6 +271,8 @@ a {
       order: 2;
       width: auto;
       max-width: 500px; }
+    [data-page="home"] .large-image {
+      height: auto; }
     [data-page="home"] .image-text-wrapper {
       display: block;
       display: flex;
@@ -273,16 +285,26 @@ a {
       padding: 0 5%; }
     [data-page="home"] .image-dog-1 {
       order: 2;
-      max-width: 580px; }
+      max-width: 580px;
+      height: auto;
+      width: 100%; }
     [data-page="home"] .image-dog-2 {
-      max-width: 580px; }
+      max-width: 580px;
+      width: 100%;
+      height: auto; }
     [data-page="home"] .paragraph-text {
       width: 100%;
-      max-width: 500px; }
+      max-width: 500px;
+      height: auto; }
     [data-page="home"] .insta-text-wrapper {
-      padding: 10% 2%;
+      padding: 15% 5%;
       background-image: none;
-      background-color: #6f5b5b; } }
+      background-color: white; }
+    [data-page="home"] .insta-text {
+      width: auto;
+      max-width: 500px; }
+    [data-page="home"] .font-black {
+      color: black; } }
 
 /* Main Font Color */
 /* Buttons and Mobile Nav Link Color */
@@ -356,7 +378,7 @@ a {
   /* Mobile Styles */ }
   [data-page="contact"] .contact-wrapper {
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     font-weight: 300;
     line-height: 30px;
@@ -594,33 +616,22 @@ a {
   /* Mobile Styles */ }
   [data-page="supplylist"] .supply-wrapper {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: black; }
-  [data-page="supplylist"] .header-image {
-    height: 500px; }
-  [data-page="supplylist"] .title {
-    top: -150px;
-    width: 550px;
-    position: absolute; }
   [data-page="supplylist"] .text-wrapper {
-    width: 550px;
+    width: 530px;
     margin: 0 auto;
     line-height: 24px;
     position: relative; }
   [data-page="supplylist"] .header {
-    font-weight: 800;
+    font-weight: 500;
     font-family: "Lora", serif;
     font-size: 24px;
     line-height: 24px; }
   @media only screen and (max-width: 950px) {
     [data-page="supplylist"] .supply-wrapper {
       font-size: 16px; }
-    [data-page="supplylist"] .header-image {
-      height: 300px; }
-    [data-page="supplylist"] .title {
-      margin: 217px auto 0 auto;
-      width: auto; }
     [data-page="supplylist"] .text-wrapper {
       margin: 0 auto;
       width: auto; } }
@@ -629,7 +640,7 @@ a {
 /* Buttons and Mobile Nav Link Color */
 /* Footer and New litter background */
 .footer-wrapper {
-  background-color: #e5e8e8;
+  background-color: #fbf5ef;
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -722,7 +733,7 @@ a {
       position: relative; }
       .desktop-nav-wrapper .nav-links .dropdown-container .dropdown {
         position: absolute;
-        background: white;
+        background: #fbf5ef;
         padding: 10px 15px;
         left: -15px;
         visibility: hidden;
@@ -810,9 +821,12 @@ a {
     font-family: "Poppins", sans-serif;
     color: black;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 1px;
     color: black; }
+
+.margin-top {
+  margin-top: 70px; }
 
 /* Mobile Styles */
 @media only screen and (max-width: 950px) {
@@ -928,13 +942,16 @@ a {
 .mb-xl {
   margin-bottom: 115px; }
 
+.title-margin {
+  margin-top: 55px; }
+
 .ta-center {
   text-align: center; }
 
 .ta-left {
   text-align: left; }
 
-.strong {
+strong {
   font-weight: 600; }
 
 .visible {

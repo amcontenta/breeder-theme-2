@@ -18,7 +18,7 @@ h1 {
   font-family: $font-2;
   font-size: 36px;
   color: $color-1;
-  margin-top: 50px;
+  line-height: normal;
 }
 
 h2 {
@@ -81,8 +81,13 @@ a {
 }
 
 @media only screen and (max-width: 950px) {
-  h2 {
+  h2,
+  h1 {
     font-size: 30px;
+  }
+
+  .hero-image {
+    width: 100%;
   }
 
   .mobile-padding {
@@ -91,5 +96,17 @@ a {
 
   .line {
     width: 80%;
+  }
+
+  .page-image {
+    width: 100%;
+  }
+
+  .margin-top {
+    margin-top: 25px;
+  }
+
+  .white-fill {
+    fill: #e16c5b;
   }
 }

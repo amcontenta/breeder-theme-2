@@ -49,7 +49,11 @@
   }
 
   .padding {
-    padding: 5%;
+    padding: 0 5%;
+  }
+
+  .image-mb {
+    margin-bottom: -8px;
   }
 
   .insta-text-wrapper {
@@ -89,6 +93,10 @@
       max-width: 500px;
     }
 
+    .large-image {
+      height: auto;
+    }
+
     .image-text-wrapper {
       display: block;
       display: flex;
@@ -108,21 +116,35 @@
     .image-dog-1 {
       order: 2;
       max-width: 580px;
+      height: auto;
+      width: 100%;
     }
 
     .image-dog-2 {
       max-width: 580px;
+      width: 100%;
+      height: auto;
     }
 
     .paragraph-text {
       width: 100%;
       max-width: 500px;
+      height: auto;
     }
 
     .insta-text-wrapper {
-      padding: 10% 2%;
+      padding: 15% 5%;
       background-image: none;
-      background-color: #6f5b5b;
+      background-color: white;
+    }
+
+    .insta-text {
+      width: auto;
+      max-width: 500px;
+    }
+
+    .font-black {
+      color: black;
     }
   }
 }

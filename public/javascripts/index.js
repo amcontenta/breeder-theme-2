@@ -19,12 +19,12 @@ $(document).ready(function () {
   });
   
   ScrollReveal().reveal('.fade-up', {
-    distance: '50px',
+    distance: '40px',
     duration: 1500,
   });
   
   ScrollReveal().reveal('.fade-up-in', {
-    distance: '30px',
+    distance: '20px',
     duration: 1500,
   });
   
