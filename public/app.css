@@ -141,7 +141,7 @@ html.sr .load-hidden {
 
 h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 36px;
+  font-size: 38px;
   color: black;
   line-height: normal; }
 
@@ -149,6 +149,12 @@ h2 {
   font-family: "Lora", serif;
   font-size: 36px;
   color: black; }
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  color: black;
+  line-height: normal; }
 
 .font-white {
   color: white; }
@@ -178,7 +184,7 @@ h2 {
   cursor: pointer;
   transition-duration: 0.1s; }
   .button:hover {
-    text-decoration: underline; }
+    opacity: 0.6; }
 
 a {
   color: #e16c5b;
@@ -196,6 +202,8 @@ a {
   h2,
   h1 {
     font-size: 30px; }
+  h3 {
+    font-size: 26px; }
   .hero-image {
     width: 100%; }
   .mobile-padding {
@@ -220,20 +228,32 @@ a {
     font-size: 16px;
     color: black; }
   [data-page="home"] .hero-image {
-    object-position: 50% 75% !important;
-    height: 590px; }
+    object-position: 50% 78% !important;
+    height: 670px; }
   [data-page="home"] .header-wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: space-around; }
+  [data-page="home"] .header-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; }
   [data-page="home"] .header-text {
-    width: 476px; }
+    color: white;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 60px; }
+  [data-page="home"] .about-header-text {
+    width: 480px; }
   [data-page="home"] .about-text {
     width: 552px; }
   [data-page="home"] .large-image {
     object-position: 50% 75% !important;
     width: 100%;
-    height: 590px;
+    height: 530px;
     object-fit: cover; }
   [data-page="home"] .image-text-wrapper {
     display: flex;
@@ -256,18 +276,28 @@ a {
     width: 75%;
     margin: 0 auto;
     margin-bottom: 55px;
-    color: white; }
+    color: white;
+    margin-top: 25px; }
   @media only screen and (max-width: 950px) {
     [data-page="home"] .home-wrapper {
       font-size: 16px; }
     [data-page="home"] .hero-image {
-      object-position: 80% 50% !important; }
+      object-position: 50% 50% !important;
+      height: 550px; }
     [data-page="home"] .header-wrapper {
       display: block;
       display: flex;
       flex-wrap: wrap;
       justify-content: center; }
+    [data-page="home"] .header-container {
+      top: 350px;
+      width: 100%; }
     [data-page="home"] .header-text {
+      color: white;
+      font-family: "Lora", serif;
+      font-weight: 500;
+      font-size: 33px; }
+    [data-page="home"] .about-header-text {
       order: 2;
       width: auto;
       max-width: 500px; }
@@ -299,10 +329,12 @@ a {
     [data-page="home"] .insta-text-wrapper {
       padding: 15% 5%;
       background-image: none;
-      background-color: white; }
+      background-color: white;
+      padding: 40px 5%; }
     [data-page="home"] .insta-text {
       width: auto;
-      max-width: 500px; }
+      max-width: 500px;
+      margin-bottom: 40px; }
     [data-page="home"] .font-black {
       color: black; } }
 
@@ -358,8 +390,8 @@ a {
     margin: 0 auto;
     line-height: 24px; }
   [data-page="faq"] .header {
-    font-weight: 500;
-    font-family: "Lora", serif;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
     font-size: 24px; }
   @media only screen and (max-width: 950px) {
     [data-page="faq"] .faq-wrapper {
@@ -387,9 +419,10 @@ a {
     width: 600px;
     margin: 0 auto 100px auto; }
   [data-page="contact"] .header {
-    font-family: "Lora", serif;
-    font-size: 40px;
-    line-height: 45px; }
+    font-family: "Poppins", sans-serif;
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 400; }
   [data-page="contact"] .margin-bottom-1 {
     margin-bottom: 140px; }
   [data-page="contact"] * {
@@ -625,10 +658,10 @@ a {
     line-height: 24px;
     position: relative; }
   [data-page="supplylist"] .header {
-    font-weight: 500;
-    font-family: "Lora", serif;
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
-    line-height: 24px; }
+    line-height: 24px;
+    font-weight: normal; }
   @media only screen and (max-width: 950px) {
     [data-page="supplylist"] .supply-wrapper {
       font-size: 16px; }
@@ -681,6 +714,7 @@ a {
 /* Footer and New litter background */
 .desktop-nav-wrapper {
   width: 100%;
+  position: absolute;
   z-index: 1;
   max-width: 1440px;
   padding-bottom: 35px; }
@@ -809,13 +843,10 @@ a {
   fill: black; }
 
 .mobile-nav-link-wrapper {
-  height: 300px;
   align-items: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 78px;
-  margin-left: 25px; }
+  justify-content: space-evenly; }
   .mobile-nav-link-wrapper a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -943,7 +974,7 @@ a {
   margin-bottom: 115px; }
 
 .title-margin {
-  margin-top: 55px; }
+  padding-top: 140px; }
 
 .ta-center {
   text-align: center; }
@@ -982,4 +1013,6 @@ strong {
   .m-mb-none {
     margin-bottom: 0; }
   .mobile-ta-center {
-    text-align: center; } }
+    text-align: center; }
+  .title-margin {
+    padding-top: 35px; } }

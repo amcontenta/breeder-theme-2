@@ -16,15 +16,23 @@ html.sr .load-hidden {
 
 h1 {
   font-family: $font-2;
-  font-size: 36px;
+  font-size: 38px;
   color: $color-1;
   line-height: normal;
+  // font-weight: 400;
 }
 
 h2 {
   font-family: $font-1;
   font-size: 36px;
   color: $color-1;
+}
+
+h3 {
+  font-family: $font-2;
+  font-size: 32px;
+  color: $color-1;
+  line-height: normal;
 }
 
 .font-white {
@@ -60,7 +68,7 @@ h2 {
   transition-duration: 0.1s;
 
   &:hover {
-    text-decoration: underline;
+    opacity: 0.6;
   }
 }
 
@@ -84,6 +92,10 @@ a {
   h2,
   h1 {
     font-size: 30px;
+  }
+
+  h3 {
+    font-size: 26px;
   }
 
   .hero-image {

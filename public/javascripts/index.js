@@ -14,7 +14,7 @@ $(document).ready(function () {
     $(this).toggleClass('is-active');
   });
 
-  ScrollReveal().reveal('.fade-in, h1', {
+  ScrollReveal().reveal('.fade-in, h1, h3', {
     duration: 1500,
   });
   
